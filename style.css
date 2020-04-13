@@ -1,0 +1,190 @@
+/* * Color Pallete */
+/* Kuning : F9F8EB */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#main {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  position: relative;
+}
+
+/* ! First Section */
+
+#container-first {
+  background-color: #f9f8eb;
+  text-align: center;
+}
+
+#title {
+  font-size: 40px;
+  font-weight: 100;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+
+#circle {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#circle #image {
+  width: auto;
+  height: 100%;
+  margin-left: -100px;
+}
+
+#img-caption #date {
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#img-caption #info {
+  font-size: 23px;
+  padding-bottom: 70px;
+}
+
+/* ! Second Section */
+
+#container-second {
+  height: 400px;
+  position: relative;
+  background: url(images/2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#tribute-info {
+  text-align: right;
+  padding-top: 175px;
+  padding-right: 167px;
+}
+
+blockquote {
+  font-size: 28px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+#quote p {
+  padding-top: 5px;
+  padding-right: 50px;
+}
+
+/* ! Third Section */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.first-image {
+  padding-top: 100px;
+}
+
+#movies {
+  position: absolute;
+  top: 1185px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+#box {
+  position: absolute;
+  top: 1185px;
+  left: 1127px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+#tribute-link:hover {
+  color: #d4e4ee;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #movies {
+    top: 1200px;
+    left: 180px;
+  }
+
+  #box {
+    top: 1225px;
+    left: 220px;
+    border: none;
+    font-style: italic;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  #movies {
+    top: 1265px;
+    left: 110px;
+  }
+}
+
+/* ! Footer Section */
+
+footer {
+  background-color: #d4e4ee;
+  height: 60px;
+  text-align: center;
+}
+
+footer h3 {
+  padding-top: 15px;
+  text-transform: lowercase;
+  font-weight: lighter;
+  font-size: medium;
+}
